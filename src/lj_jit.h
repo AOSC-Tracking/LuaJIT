@@ -335,7 +335,7 @@ enum {
   LJ_K64_M2P64_31 = LJ_K64_M2P64,
 #endif
 #endif
-#if LJ_TARGET_MIPS
+#if LJ_TARGET_MIPS || LJ_TARGET_LOONGARCH64
   LJ_K64_2P31,		/* 2^31 */
 #if LJ_64
   LJ_K64_2P63,		/* 2^63 */
@@ -353,10 +353,10 @@ enum {
   LJ_K32_2P52_2P31,	/* 2^52 + 2^31 */
   LJ_K32_2P52,		/* 2^52 */
 #endif
-#if LJ_TARGET_PPC || LJ_TARGET_MIPS
+#if LJ_TARGET_PPC || LJ_TARGET_MIPS || LJ_TARGET_LOONGARCH64
   LJ_K32_2P31,		/* 2^31 */
 #endif
-#if LJ_TARGET_MIPS64
+#if LJ_TARGET_MIPS64 || LJ_TARGET_LOONGARCH64
   LJ_K32_2P63,		/* 2^63 */
   LJ_K32_M2P64,		/* -2^64 */
 #endif
