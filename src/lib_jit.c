@@ -732,6 +732,11 @@ static uint32_t jit_cpudetect(lua_State *L)
   }
 #endif
 #endif
+
+#elif LJ_TARGET_LOONGARCH64
+
+  /* No optional CPU features to detect (for now). */
+
 #else
 #error "Missing CPU detection for this architecture"
 #endif
