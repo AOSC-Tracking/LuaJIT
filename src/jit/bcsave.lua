@@ -64,7 +64,7 @@ local map_type = {
 
 local map_arch = {
   x86 = true, x64 = true, arm = true, arm64 = true, arm64be = true,
-  ppc = true, mips = true, mipsel = true,
+  ppc = true, mips = true, mipsel = true, loongarch64 = true
 }
 
 local map_os = {
